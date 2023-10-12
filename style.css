@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  position: relative;
+}
+.main-nav{
+  background-color: #fff;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+.main-nav .nav{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.main-nav .nav img{
+  position: absolute;
+  left: 5%;
+  padding-top: 20px;
+  width: 60px;
+}
+.main-nav .nav i{
+  position: absolute;
+  right: 5%;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.main-nav .nav i:hover{
+  color: #10cab7;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+/* list */
+.list{
+  width: 200px;
+  height: 220px;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 70px;
+  right: 5%;
+}
+.list ul{
+  width: 100%;
+}
+.list ul li a{
+  width: 100%;
+  padding: 15px 0;
+  color: #777;
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.list ul li .la{
+  border-bottom: 1px solid #cecece;
+}
+.list ul li a:hover{
+  padding-left:10px;
+}
+.main-nav .nav i:hover.list{
+  background-color: blueviolet;
+}
+/* list */
+.headere{
+  background-image: url(images/landing.jpg);
+  width: 100%;
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headere .cap{
+  text-align: center;
+  
+}
+.headere .cap h1{
+  color: #10cab7;
+  font-size: 70px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+.headere .cap p{
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* start of icons */
+.icons{
+  display: grid;
+  grid-template-columns: repeat(3,280px);
+  gap: 10%;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  padding-top: 5%;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+.icons .icon {
+  text-align: center;
+  width: 100%;
+}
+.icons .icon i {
+  color: #10cab7;
+  font-size: 3em;
+}
+.icons .icon h2 {
+  margin-top: 15px;
+  margin-bottom:15px;
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #000;
+}
+.icons .icon p{
+  color: #777;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 600;
+}
+/* end of icons */
+@media (max-width:1080px) {
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    height: 560px;
+  }
+}
+@media (max-width:685px) {
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(1,300px);
+    height: 860px;
+  }
+}
+
+/* Services */
+.Services{
+  justify-content: center;
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 10%;
+  
+}
+.Services h3{
+  font-size: 90px;
+  color: #c4c4c4;
+}
+.Services p{
+  font-size: 20px;
+  color: #4c4c4c;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+.ff{
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2,400px);
+  gap: 25px;
+}
+.ff .go{
+  display: flex;
+  gap: 20px;
+  margin-top: 5%;
+}
+.ff .go .sad i{
+  color: #10cab7;
+  font-size: 35px;
+}
+.ff .go .fat h4{
+  font-size: 23px;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.ff .go .fat p{
+  font-size: 15px;
+  color: #6a6a6a;
+  line-height: 1.5em;
+}
+.photo .ph{
+  width: 350px;
+  height: 430px;
+  position: relative;
+}
+.photo .ph .blue{
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  background-color: #393e56;
+  z-index: -1;
+}
+.photo .ph img{
+  width: 270px;
+  height: 350px;
+  margin-top:50px;
+}
+@media (max-width:1115px) {
+  .photo .ph{
+    display: none;
+  }
+  .ff{
+    grid-template-columns: repeat(2,300px);
+  }
+}
+@media (max-width:700px) {
+  .ff{
+    grid-template-columns: repeat(1,320px);
+  }
+}
+@media (max-width:500px) {
+.Services h3{
+  font-size: 50px;
+  color: #c4c4c4;
+}
+.Services p{
+  font-size: 17px;
+  color: #4c4c4c;
+}
+@media (max-width:360px) {
+  .ff{
+    grid-template-columns: repeat(1,100%);
+    justify-content: center;
+  }
+  .ff .go{
+    width: 100%;
+  }
+  .ff .go .sad i{
+    font-size: 25px;
+  }
+  .ff .go .fat h4{
+    font-size: 20px;
+  }
+  .ff .go .fat p{
+    font-size: 14px;
+  }
+}
+@media (max-width:320px) {
+  .ff .go{
+    width: 90%;
+  }
+  .ff .go .fat p{
+    font-size: 12px;
+  }
+}
+}
+.Portfolio{
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 500px;
+  margin-top: 7%;
+}
+.Portfolio .title{
+  margin-top: 5%;
+}
+.Portfolio .title h3{
+  font-size: 90px;
+  color: #c4c4c4;
+}
+.Portfolio .title p{
+  font-size: 20px;
+  color: #4c4c4c;
+}
